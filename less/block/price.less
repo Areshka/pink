@@ -1,0 +1,89 @@
+.price {    
+  padding: 90px 0 50px 0;
+  background-image: url("@{img-folder}bg-scale.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.table {
+  min-width: 620px;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+
+  td {
+    width: 24.3%;
+    border: 2px solid #e5e5e5;
+  }
+
+  tr:first-child td:first-child {
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 2px solid #e5e5e5;
+    background-color: #f2f2f2;
+  }
+
+  tr:first-child td {
+    background-color: #283645;
+      padding: 13px 0;
+      text-align: center;
+      font-family: "OpenSansBold", Arial, sans-serif;
+      font-weight: 700px;
+      font-size: 16px;
+      line-height: 30px;
+      color: #fff;
+      border-color: #fff;
+  }
+
+  tr:nth-child(n+2) td {
+    font-family: "OpenSansRegular", Arial, sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 7px 0;
+    padding-left: 15px;
+    background-color: #fff;
+  }
+
+  td:nth-child(1) {
+    text-align: left;
+  }
+
+  .price__hit {
+    position: relative;
+    background-image: url("@{img-folder}icons/hit.svg");
+    background-repeat: no-repeat;
+
+    &::before {
+      content: "ХИТ";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      transform: rotate(-45deg);
+      font-family: "OpenSansRegular";
+    }
+  }
+
+}
+
+.yes {
+	width: 31px;
+	height: 21px;
+  fill: #3dc644;
+  vertical-align: middle;
+}
+
+.icon-no {
+	width: 26.752px;
+	height: 26.752px;
+  fill: #f25b26;
+  vertical-align: middle;
+}
+
+
+@media (min-width:@desctop-width) {
+  .price {
+    padding: 140px 0 95px 0;
+  }
+}

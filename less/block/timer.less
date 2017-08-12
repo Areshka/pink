@@ -1,0 +1,99 @@
+.timer {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .timer {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // background: #fff;
+
+    .container {
+      display: flex;
+    }
+  }
+
+  .timer__img {
+    width: 300px;
+    margin-right: 10px;
+
+    img {
+      width: 245px;
+      height: 275px;
+    }
+  }
+
+  .timer__info {
+    width: 310px;
+    font-family: "OpenSansRegular", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .timer__header {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    padding-bottom: 16px;
+    font-family: "OpenSansBold", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000;
+  }
+
+  .timer__descr {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 16px;
+    color: #000;
+  }
+
+  a {
+    color: @pink-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: @gray-color;
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+
+  .timer {
+    background-color: #f2f2f2;
+  }
+
+  .timer__img {
+    width: 300px;
+    margin-right: 70px;
+  }
+
+  .timer__info {
+    width: 570px;    
+  }
+
+  .timer__header {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-size: 30px;
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .timer__descr {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

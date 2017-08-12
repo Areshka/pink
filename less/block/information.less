@@ -1,0 +1,165 @@
+.information {
+  text-align: center;
+  background-color: #fff;
+  background-image: url("@{img-folder}bg-scale.svg");
+  background-repeat: no-repeat;
+  background-position: 0 105px;
+  background-size: cover;
+
+}
+
+.information__slogan {
+  margin-bottom: 90px;
+  padding: 50px 0px 0 0px;
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 24px;
+
+  p {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+}
+
+.information__iphone {
+  display: none;
+}
+
+.information__list-item {
+  margin-bottom: 40px;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    font-family: "OpenSansBold", Arial, sans-serif;
+    font-size: 16px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0 10px;
+    font-family: "OpenSansLight", Arial, sans-serif;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .information {
+    background-position: 0 200px;
+  }
+
+  .information .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .information__slogan {
+    flex-basis: 100%;
+    margin-bottom: 90px;
+    padding: 60px 0px 0 0px;
+    font-size: 40px;
+    line-height: 50px;
+
+      p {
+        margin-bottom: 0px;
+
+        &:last-child {
+          margin: 0 70px;
+        }
+      }
+
+  }
+
+  .information__list {
+    flex-basis: 50%;
+    order: 2;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .information__list-item {
+    margin-bottom: 45px;
+
+
+    h3 {
+      margin-bottom: 18px;
+      font-size: 18px;
+    }
+
+    p {
+      padding: 0;
+      font-family: "OpenSansRegular", Arial, sans-serif;
+      font-size: 14px;
+    }
+  }
+
+  .iphone {
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+
+  .information {
+    background-position: 0 316px;
+  }
+
+  .information__slogan {
+    padding: 80px 0px 0 0px;
+    font-size: 50px;
+    line-height: 60px;
+
+      p {
+        margin-bottom: 0px;
+
+        &:last-child {
+          margin: 0 150px;
+        }
+      }
+  }
+
+  .information__iphone {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .information__list {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    // order: 2;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .information__list-item {
+    margin-bottom: 0;
+    // padding: 0 20px;
+    width: 294px;
+
+    h3 {
+      width: 240px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      font-size: 24px;
+
+    }
+
+    p {
+      width: 240px;
+      margin: 0 auto;
+      padding: 0 10px;
+      font-family: "OpenSansRegular", Arial, sans-serif;
+      font-size: 16px;
+    }
+  }
+
+  .iphone {
+    display: none;
+    // flex-grow: 1;
+    // margin-top: -50px;
+  }
+}

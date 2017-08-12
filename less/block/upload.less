@@ -1,0 +1,252 @@
+.upload {
+  background-color: #f2f2f2;
+}
+
+.upload__photo {
+  margin: 20px 0;
+}
+
+.upload__emphasis {
+  margin: 0;
+  padding: 45px 0;
+  font-family: "OpenSansRegular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.upload__form {
+  font-size: 0;
+
+  input[type=range] {
+    margin: 25px 0 23px 0;
+  }
+}
+
+.upload__form label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 81px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon-editor {
+  fill: #b5b9be;
+  vertical-align: middle;
+
+  &:hover {
+    fill: #8d949b;
+  }
+}
+
+.icon-editor-crop {
+  width: 48px;
+  height: 48px;
+}
+
+.icon-editor-contrast {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-editor-fill {
+  width: 48px;
+  height: 48px;
+}
+
+.upload__form-tabs {
+  margin-bottom: 35px;
+  padding: 0 18px;
+  border-bottom: 1px solid #dddfe0;
+}
+
+.upload__form-tabs > .upload__form-item,
+.upload__form-tabs > input {
+  display: none;
+}
+
+.upload__form-tabs input[type="radio"]:checked + label {
+  .icon-editor {
+    fill: @pink-color;
+  }
+}
+
+.upload__form-tabs > input:nth-of-type(1):checked ~ .upload__form-item:nth-of-type(1),
+.upload__form-tabs > input:nth-of-type(2):checked ~ .upload__form-item:nth-of-type(2),
+.upload__form-tabs > input:nth-of-type(3):checked ~ .upload__form-item:nth-of-type(3) {
+  display: block;
+}
+
+.upload__form-item .icon-editor {
+  display: none;
+}
+
+.btn-pink {
+  .btn(#f2f2f2, @pink-color, @pink-color, @pink-color, #fff, @pink-color);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn-gray {
+  .btn(#f2f2f2, #f2f2f2, #b5b9be,  #dddfe0, #f2f2f2, #b5b9be);
+  width: 100%;
+  margin-bottom: 40px;
+  border-color: #dddfe0;
+
+  &:hover {
+    color: #b5b9be;
+    border-color: #b5b9be;
+  }
+
+  &:active {
+    color: #cbced2;
+    background-color: #b5b9be;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .upload__emphasis {
+    margin: 0;
+    padding: 50px 0;
+    font-size: 18px;
+  }
+
+  .upload__photo {
+    margin: 0;
+    width: 300px;
+  }
+
+  .upload-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 0;
+  }
+
+  .upload__form {
+    width: 280px;
+    font-size: 0;
+
+    input[type=range] {
+      margin: 34px 0 35px 0;
+      width: 210px;
+    }
+  }
+
+  .upload__form label {
+    vertical-align: middle;
+    width: 24px;
+    margin-right: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .icon-editor {
+    fill: @pink-color;
+    vertical-align: middle;
+
+    &:hover {
+      fill: @pink-color;
+      opacity: .8;
+    }
+  }
+
+  .icon-editor-crop {
+    width: 24px;
+    height: 24px;
+  }
+
+  .icon-editor-contrast {
+    width: 16px;
+    height: 16px;
+  }
+
+  .icon-editor-fill {
+    width: 24px;
+    height: 24px;
+  }
+
+  .upload__form-tabs {
+    margin-bottom: 60px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .upload__form-tabs > .upload__form-item {
+    display: block;
+  }
+
+  .upload__form-item {
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  .upload__form-item input[type="range"]:focus {
+    .icon-editor {
+      fill: @pink-color;
+    }
+  }
+
+  .upload__form-tabs .tab {
+    display: none;
+  }
+  .upload__form-item .icon-editor {
+    display: inline-block;
+  }
+
+  .btn-gray {
+    margin-bottom: 0;
+  }
+
+}
+
+
+@media (min-width: @desctop-width) {
+
+  .upload {
+    background-color: #fff;
+  }
+
+  .upload-container {
+    padding: 55px 60px 55px 80px;
+    background-color: #f2f2f2;
+  }
+
+  .upload__form {
+    width: 410px;
+
+    input[type=range] {
+      width: 285px;
+      margin-left: 40px;
+    }
+  }
+
+  .icon-editor-crop {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon-editor-contrast {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+  }
+
+  .icon-editor-fill {
+    width: 48px;
+    height: 48px;
+  }
+
+  .btn-pink {
+    margin-right: 40px;
+  }
+  .btn-pink,
+  .btn-gray {
+    width: 185px;
+    margin-top: 65px;
+    margin-bottom: 0;
+  }
+
+}

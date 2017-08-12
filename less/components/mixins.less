@@ -1,0 +1,71 @@
+.container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 940px;
+  }
+}
+
+.add-font(@font-url, @font-name, @font-weight: normal, @font-style: normal) {
+  font-family: @font-name;
+  src: url('@{font-folder}@{font-url}.eot'); // IE9
+  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-8
+  url('@{font-folder}@{font-url}.woff') format('woff'), // for modern browser
+  url('@{font-folder}@{font-url}.ttf') format('truetype'), // Safari, Android, IOS
+  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy IOS ;
+  font-weight: @font-weight;
+  font-style: @font-style;
+}
+
+.transition(@prop: all, @time: 0.5s, @ease: ease-in-out) {
+  transition: @prop @time @ease;
+}
+
+.bg-img (@img, @pos: center center, @att: scroll) {
+  background-image: url('@{img-folder}@{img}');
+  background-position: @pos;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: @att;
+}
+
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.btn(@bg-color: transparent, @bg-color-hover: #fff, @bg-color-active: @bg-color-hover,  @color: #fff, @color-hover: @pink-color, @border-color: #fff) {
+  display: inline-block;
+  padding: 15px 0;
+  font-family: "OpenSansBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  color: @color;
+  background-color: @bg-color;
+  border: 2px solid @border-color;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: @color-hover;
+    background-color: @bg-color-hover;
+  }
+
+  &:active {
+      outline: none;
+    color: fade(@color-hover, 55%);
+    background-color: @bg-color-hover;
+  }
+}

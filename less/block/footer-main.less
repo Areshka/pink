@@ -1,0 +1,133 @@
+.main-footer {
+  padding: 40px 0;
+
+  .logo-header-tablet {
+  	width: 146.3px;
+  	height: 40.375px;
+    fill: #283645;
+
+    --glass: #d22856;
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill: #283645;
+      opacity: .5;
+    }
+  }
+}
+
+.main-footer__logo {
+  margin-bottom: 30px;
+  text-align:center;
+}
+
+.main-footer__social {
+  margin-bottom: 30px;
+  padding: 0;
+  text-align:center;
+}
+
+.social__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border-color: #000;
+  }
+
+  &:active {
+    border-color: #e9ebec;
+    opacity: .5;
+  }
+}
+
+.twiter {
+	width: 17.5px;
+	height: 14.663px;
+  fill: @pink-color;
+}
+
+.facebook {
+	width: 8.673px;
+	height: 18.944px;
+  fill: @pink-color;
+}
+
+.youtube {
+	width: 14.64px;
+	height: 13.96px;
+  fill: @pink-color;
+}
+
+.html-academy {
+	width: 26.943px;
+	height: 34.09px;
+  fill: @pink-color;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: .5;
+  }
+}
+
+.main-footer__copy {
+  text-align: center;
+
+  span {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+    margin-right: 15px;
+    font-family: "OpenSansRegular", Arial, sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    color: #283645;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .main-footer {
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+  .main-footer__logo {
+    width: 150px;
+    margin-bottom: 0;
+    padding: 3px 0;
+    text-align: left;    
+  }
+
+  .main-footer__social {
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+  .main-footer__copy {
+    width: 150px;
+    padding: 5px 0;
+    text-align: right;
+  }
+}

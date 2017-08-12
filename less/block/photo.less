@@ -1,0 +1,224 @@
+.photo {
+
+}
+
+.header-page {
+  margin: 0;
+  padding: 35px 0 65px 0;
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  // background: red;
+}
+
+.photo__emphasis {
+  margin: 0;
+  padding: 45px 0;
+  font-family: "OpenSansRegular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.photo__panorama {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.btn-panorama-day {
+  position: absolute;
+  top: 0;
+  right: 7%;
+  padding: 8px 25px;
+  font-family: "OpenSansBold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: @pink-color;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #434f5c;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: @pink-color;
+    opacity: .5;
+  }
+}
+
+.photo__list-item {
+  margin-bottom: 20px;
+}
+
+.photo__comment {
+  width: 246px;
+  margin-top: -5px;
+  padding: 25px 17px;
+  background-color: #f2f2f2;
+  font-family: "OpenSansRegular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.photo__autor {
+  margin: 0;
+  font-family: "OpenSansBold", Arial, sans-serif;
+
+  span {
+    font-family: "OpenSansRegular", Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.photo__message {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.photo__like {
+  margin: 0;
+  font-family: "OpenSansRegular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo__like a {
+  text-decoration: none;
+
+  span {
+    margin-left: 20px;
+    order: 2;
+    color: @pink-color;
+  }
+}
+
+.icon-heart {
+	width: 12.545px;
+	height: 11.99px;
+  fill: @pink-color;
+  margin-top: 5px;
+}
+
+@media (min-width: @tablet-width) {
+
+  .photo {
+
+  }
+
+  .header-page {
+    margin: 0;
+    padding: 80px 0 145px 0;
+    font-size: 50px;
+  }
+
+  .photo__emphasis {
+    width: 560px;
+    padding: 100px 30px 80px 30px;
+    font-size: 18px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .photo__panorama {
+    margin-bottom: 50px;
+
+    .photo__comment {
+      width: 570px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .photo__message {
+        order: 2;
+      }
+
+      .photo__like {
+        order: 1;
+      }
+    }
+  }
+
+.photo__like a {
+    display: flex;
+    justify-content: space-between;
+
+    .icon-heart {
+      order: 3;
+    }
+
+    span {
+      margin-right: 20px;
+      margin-left: 0;
+    }
+  }
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo__list-item {
+    width: 300px;
+  }
+
+  .photo__comment {
+    width: 250px;
+    padding: 30px 25px;
+  }
+
+  .photo__message {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (min-width: @desctop-width) {
+
+  .photo {
+
+  }
+
+  .header-page {
+    padding: 75px 0 105px 0;
+  }
+
+  .photo__emphasis {
+    width: 600px;
+    margin: 0 auto;
+    padding: 100px 0 90px 0;
+  }
+
+  .photo__panorama {
+    margin-bottom: 55px;
+
+    .photo__comment {
+      width: 880px;
+    }
+  }
+
+  .photo__comment {
+    width: 240px;
+    padding: 30px 30px;
+  }
+
+}

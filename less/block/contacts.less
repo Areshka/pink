@@ -1,0 +1,129 @@
+.contacts {
+  padding-top: 50px;
+}
+
+.contacts__descr {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 24px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.contacts__item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contacts__item-header {
+  margin: 0;
+  font-family: "OpenSansBold", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.contacts__item-info {
+  margin: 0;
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 24px;
+  color: @pink-color;
+  cursor: pointer;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: #bec2c7;
+    text-decoration: none;
+  }
+
+}
+
+.map {
+  position: relative;
+  width: auto;
+  height: 220px;
+  background: url("../../img/icons/triangle-white-footer.svg") no-repeat center top,
+              url("../../img/bg-map-mobile.jpg") no-repeat center -425px;
+
+}
+
+
+
+@media (min-width: @tablet-width) {
+
+  .contacts {    
+    padding-top: 55px;
+  }
+
+  .contacts__descr {
+    margin-bottom: 55px;
+    font-size: 40px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    flex-basis: 300px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    &:last-child {
+      flex-grow: 1;
+    }
+  }
+
+  .map {
+    width: auto;
+    height: 430px;
+    background: url("../../img/icons/triangle-white-footer.svg") no-repeat center top,
+                url("../../img/bg-map-tablet.jpg") no-repeat center -285px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+
+  .contacts {
+    padding-top: 70px;
+  }
+
+  .contacts__descr {
+    margin-bottom: 60px;
+    font-size: 50px;
+  }
+
+  .contacts__item {
+    margin-bottom: 50px;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:last-child {
+      // flex-grow: 0;
+      order: 1;
+    }
+  }
+
+
+
+  .contacts__item-header {
+    margin-bottom: 25px;
+  }
+
+  .map {
+    width: auto;
+    height: 520px;
+    background: url("../../img/icons/triangle-white-footer.svg") no-repeat center top,
+                url("../../img/bg-map-tablet.jpg") no-repeat center -355px;
+    background-size: 100%;
+  }
+
+}

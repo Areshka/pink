@@ -1,0 +1,140 @@
+.download {
+  padding-top: 395px;
+  text-align: center;
+  color: #e2e4e6;
+  background-image: url("@{img-folder}iphone-6-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center 105px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("@{img-folder}iphone-6-tablet.png");
+    background-position: center 111px;
+  }
+
+  @media (min-width: @desctop-width) {
+    background-image: url("@{img-folder}iphone-6-desktop.png");
+    background-position: 270px 116px;
+  }
+}
+
+.download__col {
+  background-color: #1d2631;
+}
+
+.download__info {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.download__slogan {
+  display: none;
+}
+
+.btn-download {
+  .btn();
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.download_os {
+  margin-bottom: 25px;
+}
+
+.icon__os {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.logo-apple {
+  width: 46.21px;
+  height: 56.753px;
+}
+
+.logo-android {
+  width: 42.084px;
+	height: 47.041px;
+  fill: #a4c639;
+}
+
+.logo-microsoft {
+  width: 43.922px;
+	height: 41.992px;
+  fill: #89edcd;
+
+  //CSS-переменные, в коде SVG-иконки
+   --sq-1: #f05423;
+   --sq-2: #84c441;
+   --sq-3: #2dabe2;
+   --sq-4: #f9bc15;
+}
+
+.download__available {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #e2e4e6;
+}
+//
+@media (min-width: @tablet-width)   {
+
+  .download {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+
+  .download__col {
+    background-color: transparent;
+    // background-color: red;
+  }
+
+  .download__info {
+    width: 300px;
+    padding: 0;
+  }
+
+  .download__slogan {
+    display: block;
+    margin: 0;
+    padding: 0 30px;
+    margin-bottom: 40px;
+    font-family: "OpenSansLight", Arial, sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .btn-download {
+    .btn();
+    width: 100%;
+    margin-bottom: 40px;
+    text-decoration: none;
+  }
+
+  .download_os {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desctop-width)   {
+
+  .download {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .download__slogan {
+    margin-bottom: 50px;
+    font-size: 45px;
+    line-height: 65px;
+  }
+
+  .btn-download {
+    margin-bottom: 60px;
+  }
+
+  .download_os {
+    margin-bottom: 60px;
+  }
+}
